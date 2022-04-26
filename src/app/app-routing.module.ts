@@ -10,10 +10,10 @@ import { ReactComponent } from './react/react.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
-  { path: 'angular', component: AngularComponent },
-  { path: 'framework', component: FrameworkComponent },
+  //{ path: 'angular', component: AngularComponent },
+  { path: 'skills', component: FrameworkComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'react', component: ReactComponent },
+  //{ path: 'react', component: ReactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'nav', component: NavComponent },
   { path: '404', component: ErrorComponent },

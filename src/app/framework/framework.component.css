@@ -1,31 +1,97 @@
-#angular-card img {
-  margin: 100px 50px 0 0;
-  transition: transform 1s;
+.main-skills{
+  min-height: 94vh;
+  box-shadow: 0px 0px 5px rgb(50 50 50 / 38%);
+  background: #f1f1f1;
+  font-family: "Quicksand", sans-serif;
+}
+
+.project{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-img{
+  width: 50px;
+}
+
+.icons-top-div{
+  display: flex;
+}
+
+.top-icon{
+  width: 190px;
+  margin-right: 10px;
+}
+
+.ngrx{
+  width: 56px;
+}
+
+.t-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-top {
+  position: relative;
+  z-index: 2;
+}
+
+.back-to-top .btn-dark {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2e2e2e;
+  border-color: #2e2e2e;
+  display: none;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.back-to-top .btn-dark:hover {
   cursor: pointer;
+  background: #fa6742;
+  border-color: #fa6742;
 }
 
-#angular-card img:hover {
-  transform: scale(1.2);
+.t-flexx{
+  display: flex;
+  justify-content: center;
 }
 
-#react-card img {
-  cursor: pointer;
-  margin: 40px 50px 0 0;
-  transition: transform 1s;
+.tools-flex{
+  display: flex;
+  justify-content: center;
+}
+.os-div{
+  padding: 15px;
+  box-shadow: 0 0 4px #8b8b8b;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-#react-card img:hover {
-  transform: scale(1.2);
+.tool-div{
+  padding: 15px;
+  box-shadow: 0 0 4px #8b8b8b;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-.body-framework {
-  -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
+h4{
+  margin: 10px 0 0 20px;
 }
-
+/*Footer*/
 .bg-div {
   background-color: #21d192;
+}
+
+.icon{
+  display: flex;
 }
 
 footer {
@@ -62,6 +128,139 @@ footer {
   color: rgb(88, 88, 88);
 }
 
+/*Progress line*/
+::selection {
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #21d192;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 95%;
+}
+.bar .progress-line.css span {
+  width: 95%;
+}
+.bar .progress-line.jquery span {
+  width: 78%;
+}
+.bar .progress-line.python span {
+  width: 80%;
+}
+.bar .progress-line.mysql span {
+  width: 90%;
+}
+.bar .progress-line.rxjs span{
+  width: 70%;
+}
+.bar .progress-line.android span{
+  width: 74%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "95%";
+}
+.progress-line.css span::after {
+  content: "95%";
+}
+.progress-line.jquery span::after {
+  content: "78%";
+}
+.progress-line.python span::after {
+  content: "80%";
+}
+.progress-line.mysql span::after {
+  content: "90%";
+}
+.progress-line.rxjs span::after{
+  content: "70%";
+}
+.progress-line.android span::after{
+  content: "74%";
+}
+
 /*MEDIA*/
 
 @media (max-width: 999px) {
@@ -71,6 +270,12 @@ footer {
 
   #react-card img {
     width: 400px;
+  }
+}
+
+@media(max-width: 800px){
+  .t-flex{
+    flex-direction: column;
   }
 }
 
@@ -86,7 +291,37 @@ footer {
   }
 }
 
+@media(max-width:645px){
+  .skill-bars{
+    width: 500px;
+  }
+}
+@media(max-width:575px){
+  .container{
+    padding-left: 1.5rem;
+    padding-right: 0.85rem;
+  }
+}
+
+@media(max-width:560px){
+  .skill-bars{
+    width: 400px;
+  }
+}
+
+@media(max-width: 500px){
+  .working-on{
+    padding-top: 35px;
+  }
+  .icons-top-div{
+    display: none;
+  }
+}
+
 @media (max-width: 440px) {
+  .skill-bars{
+    width: 295px;
+  }
   #angular-card img {
     width: 250px;
     margin: 50px 25px 0 0;

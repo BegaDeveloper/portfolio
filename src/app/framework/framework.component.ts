@@ -11,5 +11,8 @@ export class FrameworkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  toTop() {
+    document.documentElement.scrollTop = 0;
+  }
 }
