@@ -55,6 +55,7 @@
 
 .me img{
   border-radius: 15px;
+  box-shadow: 0 0 7px #ccc;
   transition: all .4s;
 }
 
