@@ -6,11 +6,11 @@ import { ErrorComponent } from './error/error.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
-import { ReactComponent } from './react/react.component';
+
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
-  //{ path: 'angular', component: AngularComponent },
+  { path: 'angular', component: AngularComponent },
   { path: 'skills', component: FrameworkComponent },
   { path: 'home', component: HomeComponent },
   //{ path: 'react', component: ReactComponent },
@@ -31,7 +31,6 @@ export const routingComponents = [
   FrameworkComponent,
   HomeComponent,
   NavComponent,
-  ReactComponent,
   NavComponent,
   ErrorComponent,
 ];

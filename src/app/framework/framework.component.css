@@ -44,6 +44,26 @@
   padding-bottom: 100px;
 }
 
+.li-img img{
+  width: 300px;
+}
+
+.li-img{
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin-prof{
+  width: 650px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #ccc;
+  transition: all 0.4s;
+}
+
+.linkedin-prof:hover{
+  transform: scale(1.1, 1.1);
+}
+
 .up-img{
   display: flex;
   justify-content: center;

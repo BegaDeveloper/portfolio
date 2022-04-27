@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 #list {
   margin: 0 200px 0 auto;
 }
@@ -16,8 +17,8 @@
 
 #my-name {
   margin-left: 200px;
-  font-size: 1.6em;
-  font-family: "Prompt", sans-serif;
+  font-size: 2em;
+  font-family: 'Whisper', cursive;
 }
 
 .fa-user-tie {
@@ -28,6 +29,7 @@ nav {
   height: 70px;
   background: transparent;
 }
+
 
 @media (max-width: 900px) {
   #list {
@@ -70,8 +72,9 @@ nav {
   }
 }
 
-@media (max-width: 310px) {
-  #list a {
-    font-size: 0.8em;
-  }
+@media(max-width: 370px){
+.nav-link{
+  padding: 7px;
+}
+
 }
