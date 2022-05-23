@@ -494,6 +494,7 @@ footer p {
   z-index: 2;
 }
 .back-to-top .btn-dark {
+  outline: none;
   width: 35px;
   height: 35px;
   border-radius: 50%;

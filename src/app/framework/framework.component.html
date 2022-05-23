@@ -26,8 +26,17 @@
   <div class="tech pt-5">
     <h3 class="text-center">OS</h3>
   <hr>
-  <div class="t-flex">
-    <div class="os-div col-md-3">
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [freeMode]="true"
+    [pagination]="{
+      clickable: true
+    }"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide>
+      <div class="os-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/bd87584868b9ded815261c4732f6de5d6dda8178fe39eaa9a0f9ee0a4518485e/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f302f30612f556e6f6666696369616c5f57696e646f77735f6c6f676f5f76617269616e745f2d5f32303032254532253830253933323031325f2532384d756c7469636f6c6f7265642532392e7376672f3131363170782d556e6f6666696369616c5f57696e646f77735f6c6f676f5f76617269616e745f2d5f32303032254532253830253933323031325f2532384d756c7469636f6c6f7265642532392e7376672e706e67" class="icon-img" alt=""></div>
         <div>
@@ -39,8 +48,8 @@
       <p class="p-os">• In depth knowledge of Windows <br>
          • Knowledge of Microsoft packages (Excell, Word, etc)<br>
          • Navigation thru windows Command Line</p>
-    </div>
-    <div class="os-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"> <div class="os-div col-md-3">
       <div class="icon">
         <div> <img src="https://camo.githubusercontent.com/b329e4854559eea41777057650d5b38ca5ffd951d706040c638ff12a15e06d86/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f612f61622f4170706c652d6c6f676f2e706e672f36343070782d4170706c652d6c6f676f2e706e67" class="icon-img" alt=""></div>
         <div>
@@ -54,8 +63,8 @@
         • Using macOs to navigate to components<br>
         • Navigation thru Terminal
       </p>
-    </div>
-    <div class="os-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="os-div col-md-3">
       <div class="icon">
         <div> <img src="https://camo.githubusercontent.com/10f32eda8a6fcf8340781de7b6bb2e180db95ad1bc5daca229e3d58f44b31333/68747470733a2f2f313030306c6f676f732e6e65742f77702d636f6e74656e742f75706c6f6164732f323031372f30332f4c494e55582d4c4f474f2e706e67" class="icon-img" alt=""></div>
         <div>
@@ -69,15 +78,26 @@
         • Navigation thru Linux terminal<br>
         • Some experience in cybersecurity tools in Kali Linux
       </p>
-    </div>
-  </div>
-</div>
-<!----->
-<div class="tools">
-  <h3 class="text-center pt-5">Tools</h3>
-  <hr>
-  <div class="tools-flex row">
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    >
+  </swiper>
+  
+
+   
+   <!----->
+   <div class="tools">
+   <h3 class="text-center pt-5">Tools</h3>
+   <hr>
+   <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [freeMode]="true"
+    [pagination]="{
+      clickable: true
+    }"
+    class="mySwiper"
+   >
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" class="icon-img" alt=""></div>
         <div>
@@ -92,8 +112,8 @@
         • Incorporating GitLense and BitBucket extensions for source control<br> 
         • Using Prettier code formater for cleaner code
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div> <img src="https://camo.githubusercontent.com/d333f9f8525602ed991385799a8fdf7a19949cbc8842b91ff584fdf10a42d9fa/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f502f70686f746f73686f702d323032302d6c6f676f2d333742303230353541342d7365656b6c6f676f2e636f6d2e706e67" class="icon-img" alt=""></div>
         <div>
@@ -107,9 +127,8 @@
         • Editing photos for usage<br>
         • Croping, lighting, background erasing and other features for cleaner pictures
       </p>
-    </div>
-    
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/b1babf4439d0d8f6bc26f996a4cf401fd6dee5945729c7a0c75aa6b58ebcb47f/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63322f41646f62655f58445f43435f69636f6e2e7376672f3132303070782d41646f62655f58445f43435f69636f6e2e7376672e706e67" class="icon-img" alt=""></div>
         <div>
@@ -124,8 +143,8 @@
         • Navigating thru images and getting their parametars for pixel perfect design <br>
         • Coping svg images, changing colors, width, height, etc
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div> <img src="https://camo.githubusercontent.com/b8ee9fd2e9b26a7265ece6dbc6f5c7449928b84f45a08fe5852d6a8dfd915fb3/68747470733a2f2f6769742d73636d2e636f6d2f696d616765732f6c6f676f732f646f776e6c6f6164732f4769742d49636f6e2d31373838432e706e67" class="icon-img" alt=""></div>
         <div>
@@ -140,8 +159,8 @@
         • Using Git Bash, Command Line, etc <br>
         • Making branches, merging, PR, Git Hooks, Advnaced Git Log, etc.
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" class="icon-img" alt=""></div>
         <div>
@@ -156,8 +175,8 @@
         • Branching, PR, code review, etc. <br>
      
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/fbed754be0846a707fb5d7ab717ee70af1ef3df31fca9bf3efb10250568f2ce3/68747470733a2f2f76616c69616e7479732e636f6d2f6170702f75706c6f6164732f323032302f30382f6269746275636b65742e706e67" class="icon-img" alt=""></div>
         <div>
@@ -172,8 +191,8 @@
         • Branching, PR, code review, etc. <br>
      
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/93862016fa8130fbe089c0148161a700e5ecdcb515dfb86226493811b6a231e3/68747470733a2f2f636f727972796c616e2e636f6d2f6173736574732f696d616765732f706f7374732f74797065732f66697265626173652e737667" class="icon-img" alt=""></div>
         <div>
@@ -186,8 +205,8 @@
         • Hosting projects, databases and auth with FireBase <br>
         • Incorporating FireBase with Angular <br>
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/b245ff76e98cda41295d397e1a8632333c6569cb0a62dfaa2b374acb55aa7ca6/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f706f73746d616e2f696d6167652f75706c6f61642f745f7465616d5f6c6f676f2f76313632393836393139342f7465616d2f32383933616564653233663031626663626432333139333236626339366136656430353234656261373539373435656436643733343035613361386236376138" class="icon-img" alt=""></div>
         <div>
@@ -200,8 +219,8 @@
         • Daily use of Postman <br>
         • Using Postman for testing API's <br>
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/c3aa8777fb7e3ef78de4c59eecbe77e8aee1ce8a9699f821b7fa54d439e166b8/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30312f57696e646f77735f5465726d696e616c5f4c6f676f5f323536783235362e706e67" class="icon-img" alt=""></div>
         <div>
@@ -214,8 +233,8 @@
         • Great command over terminal <br>
         • Using it to navigate to components, install libraries, etc <br>
       </p>
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template>
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div><img src="https://camo.githubusercontent.com/3754c01dd912b66a7483ed7abbdb5b05d9befb521c8c433410dfd45f2f8a4bdd/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64622f4e706d2d6c6f676f2e7376672f35343070782d4e706d2d6c6f676f2e7376672e706e67" class="icon-img" alt=""></div>
         <div>
@@ -229,15 +248,27 @@
         • Using npm for installing packages and tools <br>
         • Uploding packages for use in applications <br>
       </p>
-    </div>
-  </div>
-</div>
+    </div></ng-template>
+    
+  </swiper>
+  
+ 
+
 <!------>
 <div class="techol-div pb-5">
   <h3 class="text-center pt-5">Technologies</h3>
   <hr>
-  <div class="tools-flex row">
-    <div class="tool-div col-md-3">
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [freeMode]="true"
+    [pagination]="{
+      clickable: true
+    }"
+    class="mySwiper"
+    
+  >
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/2bbf6e22e60a875556fa365be5661623c9ab56f445aa463bb30ffa10e3f49a34/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f332f33382f48544d4c355f42616467652e7376672f3130323470782d48544d4c355f42616467652e7376672e706e67" class="icon-img" alt="">
@@ -253,9 +284,8 @@
           • Great control over HTML in different types od apps
         </p>
      
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/cdb34d0c8c5c863a58bee3f067b909b1b38146162e6c6e1ec740f6ae0b3b6e72/68747470733a2f2f7374617469632e63646e6c6f676f2e636f6d2f6c6f676f732f632f31382f6373732e737667" class="icon-img" alt="">
@@ -269,12 +299,11 @@
           • Excellent knowledge over CSS and styling elements<br>
           • Using Bootstrap, Angular Material for CSS Frameworks<br>
           • Great knowledge of css animations, keyframes, etc. <br>
-          • Accesing component child elements with css and ::ng-deep, :host.
+         
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/f75be34b984916f7c30b40dbf332154eb2e06ed630ce0f446aaa6ec134c8f94f/68747470733a2f2f736173732d6c616e672e636f6d2f6173736574732f696d672f7374796c6567756964652f7365616c2d636f6c6f722d61656630333534632e706e67" class="icon-img" alt="">
@@ -289,9 +318,8 @@
           • Incorporating functions 
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/0a89ec294e442d718bcd0d6e5641f78a69f8e6eadfa5ffd9f6e271df0ccb802f/68747470733a2f2f7365656b6c6f676f2e636f6d2f696d616765732f422f626f6f7473747261702d6c6f676f2d334333304642324131362d7365656b6c6f676f2e636f6d2e706e67" class="icon-img" alt="">
@@ -307,9 +335,8 @@
           • In depth knowledge and control over Bootstrap elements
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3" id="tech">
       <div class="icon">
         <div>
           <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" class="icon-img" alt="">
@@ -328,9 +355,8 @@
 
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/f1dce0381ee0b1e19bc2d2dd0d09d28a52656ab4524f3aef66ebf8aa675f7e54/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f342f34632f547970657363726970745f6c6f676f5f323032302e7376672f3130323470782d547970657363726970745f6c6f676f5f323032302e7376672e706e67" class="icon-img" alt="">
@@ -346,9 +372,8 @@
           • Researching new technologies and best practices
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/c1c6368f984089b53f922190e1c594f4e33033f3fd2fb8bb854a5deb05e051ab/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f342f34662f4e61746976655363726970745f6c6f676f2e706e67" class="icon-img" alt="">
@@ -364,9 +389,8 @@
           
         </p>
       
-    </div>
-
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/f3242987d81ee42ff4eea89a725c94707811e45b747b2aff1dd89681b45b4c98/68747470733a2f2f69636f6e6170652e636f6d2f77702d636f6e74656e742f66696c65732f66752f3336393235342f7376672f616e64726f69642d6c6f676f2d69636f6e2d706e672d7376672e706e67" class="icon-img" alt="">
@@ -384,8 +408,8 @@
 
         </p>
       
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template
+    ><ng-template swiperSlide class="slid"><div class="tool-div col-md-3" id="tech">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/23010d2b4dbe41dbfcbe3c2208febd9dcde0c18472e422790d346a483cc0fceb/68747470733a2f2f6465766e6f74652e746563682f77702d636f6e74656e742f75706c6f6164732f323032312f31302f416e67756c61722d6c6f676f2e706e67" class="icon-img" alt="">
@@ -405,8 +429,8 @@
           • Audit code to identify bottlenecks of performance and fixing them
         </p>
       
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template>
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/a24ce5249b9d299a66edc1b89a8fa8ffe1b9a3c6311ff282b61dd48e0e992921/68747470733a2f2f72786a732e6465762f6173736574732f696d616765732f66617669636f6e732f66617669636f6e2d313932783139322e706e67" class="icon-img" alt="">
@@ -423,8 +447,8 @@
           
         </p>
       
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template>
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/63544bb484a4e9d3d5bd349f7f7ff839bcea8902469cc0aaf95bbbe4b695330c/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f332f33312f5765627973746865725f32303136303432335f2d5f456c65706870616e742e7376672f3235363070782d5765627973746865725f32303136303432335f2d5f456c65706870616e742e7376672e706e67" class="icon-img" alt="">
@@ -440,8 +464,8 @@
           • Build efficient, testable, and reusable PHP modules <br>
         </p>
       
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template>
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/dda62048e15a12bd2abb788d2aac3b31d9d8bc657c67c3449464dd380df72190/68747470733a2f2f7777772e6a6f796b616c2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031392f30392f636f646569676e697465722d69636f6e2d3531322e706e67" class="icon-img" alt="">
@@ -457,8 +481,8 @@
           • Good debugging skills  <br>
         </p>
       
-    </div>
-    <div class="tool-div col-md-3">
+    </div></ng-template>
+    <ng-template swiperSlide class="slid"><div class="tool-div col-md-3">
       <div class="icon">
         <div>
           <img src="https://camo.githubusercontent.com/9c0ee70756fd326954bef60fe489c07196857df2a208367b8a4b4196d5188453/68747470733a2f2f7374617469632e63646e6c6f676f2e636f6d2f6c6f676f732f6d2f31302f6d7973716c2e737667" class="icon-img" alt="">
@@ -475,8 +499,8 @@
           • Prepare documentations and specifications  <br>
         </p>
       
-    </div>
-  </div>
+    </div></ng-template>
+  </swiper>
 </div>
 </div>
 <!--------->
@@ -541,8 +565,9 @@
     </div>
   </div>
 </div>
-
 </div>
+</div>
+
 
  <!-- Back to top -->
  <div id="back-to-top" class="back-to-top">
